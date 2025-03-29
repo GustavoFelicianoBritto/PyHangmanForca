@@ -1,6 +1,6 @@
 import random
 
-wordList=["vaca","camelo","jabuti","ornitorrinco","paralelepipedo","elefante","tartaruga","hipopotamo","rinoceronte","formiga",
+wordList=["vaca","camelo","jabuti","ornitorrinco", "elefante","tartaruga","hipopotamo","rinoceronte","formiga",
     "arara","capivara","tucano","lagarto","cachorro","papagaio","jacare","borboleta","girafa","pinguim","morcego","tigre","zebra",
     "macaco","golfinho","baleia","sapo","rã","peixe","piranha",
     "baiacu","aguia","falcão","gaivota","pelicano"]
