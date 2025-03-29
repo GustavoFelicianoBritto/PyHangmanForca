@@ -46,7 +46,7 @@ acertos=0
 vidas=5
 
 
-print(f"Debug, a palavra é: {activeWord}")
+#print(f"Debug, a palavra é: {activeWord}")
 print(f"Bem vindo ao jogo da forca!!! \n"
       f"Dica: {categoria}\n")
 
