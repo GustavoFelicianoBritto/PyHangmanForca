@@ -48,4 +48,4 @@ else:
 print(wordGuess)
 #print(ActiveWord)
 
-print("Aperte qualquer tecla para fechar")
+tecla=input(f"\n\nPressione enter para fechar: ")
