@@ -47,3 +47,5 @@ else:
 
 print(wordGuess)
 #print(ActiveWord)
+
+print("Aperte qualquer tecla para fechar")
