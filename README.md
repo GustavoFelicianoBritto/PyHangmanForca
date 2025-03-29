@@ -5,7 +5,6 @@ Um simples jogo da forca em Python onde o jogador tenta adivinhar uma palavra se
 
 ⚠️ **Bug conhecido**: 
 - Se o jogador repetir a mesma letra correta várias vezes, o contador de acertos aumenta indevidamente, permitindo vencer sem completar a palavra. Uma correção futura está planejada para resolver isso.  
-- Algumas palavras não são animais 
 
 ---
 
