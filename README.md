@@ -3,10 +3,12 @@
 🔍 **Descrição**  
 Um simples jogo da forca em Python onde o jogador tenta adivinhar uma palavra secreta (dica: sempre um animal!) antes de perder todas as vidas.  
 
-⚠️ **Bug conhecido**: 
-- Se o jogador repetir a mesma letra correta várias vezes, o contador de acertos aumenta indevidamente, permitindo vencer sem completar a palavra. Uma correção futura está planejada para resolver isso.  
+<!--⚠️ **Bug CORRIGIDO**: 
+- ✅ Quando o jogador repetia a mesma letra correta várias vezes, o contador de acertos aumenta indevidamente, permitindo vencer sem completar a palavra. -->
 
 ✨**NOVIDADES**:
+- Agora você possui informação na tela com suas letras já enviadas (Evitando repetir letra)
+- ✅ Bug Corrigido: Quando o jogador repetia a mesma letra correta várias vezes, o contador de acertos aumenta indevidamente, permitindo vencer sem completar a palavra (agora temos um acumulador de letras enviadas)
 - Agora o usuário pode escolher entre 3 dificuldades **cada dificuldade possui um tema diferente**
 ---
 
