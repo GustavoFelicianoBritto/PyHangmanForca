@@ -76,9 +76,9 @@ elif(difficulty=='3'):
     print("Opção difícil escolhida")
     activeWord = random.choice(wordListCountry)
     categoria = "Países"
-elif (difficulty == '4'):
+elif(difficulty == '4'):
     print("Opção EXTREMA escolhida")
-    activeWord = random.choice(wordListCountry)
+    activeWord = random.choice(wordListGeneral)
     categoria = "Geral"
 else:
     print("Opção inválida, categoria fácil escolhida")
