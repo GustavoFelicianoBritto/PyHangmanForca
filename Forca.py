@@ -16,10 +16,15 @@ wordListCountry = ["argentina", "australia", "brazil", "canada", "chile",
     "germany", "greece", "india", "israel", "italy",
     "japan", "mexico", "norway", "poland", "russia"]
 
+
+
+
 categoria = "Animais"
 
 
 difficulty = int(input(f"Escolha o nível de dificuldade:\n1 - Animais (fácil)\n2 - Estados Brasileiros (intermediário)\n3 - Países em inglês (difícil): "))
+
+print("==========================\n")
 
 if(difficulty==1):
     print("Opção fácil escolhida")
@@ -44,10 +49,11 @@ else:
 letterQtd = len(activeWord)
 acertos=0
 vidas=5
+letterSend =[]
 
 
 #print(f"Debug, a palavra é: {activeWord}")
-print(f"Bem vindo ao jogo da forca!!! \n"
+print(f"\nBem vindo ao jogo da forca!!! \n"
       f"Dica: {categoria}\n")
 
 wordGuess = ['_']*letterQtd
@@ -55,21 +61,29 @@ wordGuess = ['_']*letterQtd
 while acertos < letterQtd and vidas>0:
 
     notValid = 0
+    print(f"Letras enviadas: {letterSend}")
+    letter = str(input(f"{wordGuess}\n\nDigite uma letra: ").lower())
+    if letter not in letterSend:
 
-    letter = str(input(f"{wordGuess}\nDigite uma letra: ").lower())
+        letterSend.insert(0,letter)
 
-    for indexLetter, currentLetter in enumerate(activeWord):
-        if letter == currentLetter:
-            print(f"Letra '{letter}' encontrada na posição {indexLetter +1}")
-            wordGuess[indexLetter] = letter
-            acertos+=1
+        print("==========================\n")
 
-        else:
-            notValid+=1
+        for indexLetter, currentLetter in enumerate(activeWord):
+            if letter == currentLetter:
+                print(f"Letra '{letter}' encontrada na posição {indexLetter +1}")
+                wordGuess[indexLetter] = letter
+                acertos+=1
 
-    if notValid == letterQtd:
-        vidas-=1
-        print("Opção incorreta")
+            else:
+                notValid+=1
+
+        if notValid == letterQtd:
+            vidas-=1
+            print("[Opção incorreta]")
+
+    else:
+        print(f"--------------------\nLetra já enviada\n--------------------")
 
 
     print(f"Vidas restantes: {vidas}")
