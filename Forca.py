@@ -94,18 +94,28 @@ vidas=5
 letterSend =[]
 
 
+
 #print(f"Debug, a palavra é: {activeWord}")
 print(f"\nBem vindo ao jogo da forca!!! \n"
       f"Dica: {categoria}\n")
 
 wordGuess = ['_']*letterQtd
 
+def displayWord():
+
+    return " , ".join(wordGuess[:letterQtd])
+
+
+
+
 while acertos < letterQtd and vidas>0:
 
     notValid = 0
 
     print(f"Letras enviadas: {letterSend}")
-    letter = str(input(f"{wordGuess}\n\nDigite uma letra: ").lower())
+
+    dp = displayWord().upper()
+    letter = str(input(f"{dp}\n\nDigite uma letra: ").lower())
 
     if letter not in letterSend:
         #se a letra enviada não estiver no vetor das letras enviadas, irei colocar ela dentro e
@@ -144,10 +154,10 @@ while acertos < letterQtd and vidas>0:
 if vidas <= 0:
     print(f"Você perdeu! a palavra era: {activeWord}")
 else:
-     print(f"Parabéns, você acertou a palavra: {activeWord} com {vidas} vidas")
+    print(f"Parabéns, você acertou a palavra: {activeWord} com {vidas} vidas")
 
-
-print(wordGuess)
+dp = displayWord().upper()
+print(dp)
 #print(ActiveWord)
 
 print(f"\n\nPressione qualquer tecla para fechar: ")
